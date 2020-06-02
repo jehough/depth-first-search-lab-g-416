@@ -20,8 +20,8 @@ function findAdjacent(rootNode, vertices, edges){
     if (edge.includes(rootNode)){
       for (let vertex of edge){
         if( vertex !== rootNode){
-          vertices.find(e => e.name === vertex && !e.discovered)?
-            vert.push(vertices.find(e => e.name === vertex && !e.discovered)): null
+          vertices.find(e => e.name === vertex && e.discovered === null)?
+            vert.push(vertices.find(e => e.name === vertex && e.discovered === null)): null
         }
       }
     }
