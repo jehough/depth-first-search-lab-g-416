@@ -1,5 +1,5 @@
 function depthFirstSearch(rootNode, vertices, edges){
-  rootNode.distance = 0
+  rootNode.discovered = true
   const queue = [rootNode]
   const visited = []
   while (queue.length !== 0){
